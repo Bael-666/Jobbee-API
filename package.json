@@ -4,14 +4,14 @@
   "description": "This API is about jobs",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app",
-    "prod": "SET NODE_ENV=production&& nodemon app.js"
+    "start": "SET NODE_ENV=production&& nodemon app.js",
+    "dev": "nodemon app"
   },
   "author": "Jeovani GR",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

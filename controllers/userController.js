@@ -129,7 +129,7 @@ async function deleteUserData(user, role){
 
         for (let i=0; i< appliedJobs.length; i++){
             let obj = appliedJobs[i].applicantsApplied.find(o => o.id === user);
-            let filePath = `${__dirname}/uploads/${obj.resume}`.replace('\\controllers', '');
+            let filePath = `${__dirname}/public/uploads/${obj.resume}`.replace('\\controllers', '');
             fs.unlink(filePath, err => {
                 if (err){
                     return console.log(err);
